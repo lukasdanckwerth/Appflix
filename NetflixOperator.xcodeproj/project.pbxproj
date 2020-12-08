@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80162B66254DBAC5006AFB26 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80162B5C254DB8FC006AFB26 /* WebKit.framework */; };
 		809F7980254DB2970064157E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809F797F254DB2970064157E /* AppDelegate.swift */; };
 		809F7982254DB2970064157E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809F7981254DB2970064157E /* ViewController.swift */; };
 		809F7984254DB2980064157E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 809F7983254DB2980064157E /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80162B5C254DB8FC006AFB26 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		809F797C254DB2970064157E /* NetflixOperator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixOperator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		809F797F254DB2970064157E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		809F7981254DB2970064157E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,17 +30,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80162B66254DBAC5006AFB26 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80162B5B254DB8FC006AFB26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80162B5C254DB8FC006AFB26 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		809F7973254DB2970064157E = {
 			isa = PBXGroup;
 			children = (
 				809F797E254DB2970064157E /* NetflixOperator */,
 				809F797D254DB2970064157E /* Products */,
+				80162B5B254DB8FC006AFB26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -272,6 +284,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NetflixOperator/NetflixOperator.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9355YBP8MQ;
@@ -283,6 +296,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.anika.NetflixOperator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -293,6 +307,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NetflixOperator/NetflixOperator.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9355YBP8MQ;
@@ -304,6 +319,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.anika.NetflixOperator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
